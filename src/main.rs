@@ -9,9 +9,8 @@ use serialport::available_ports;
 #[command(
     author,
     version,
-    about = "DDR-SPD读写工具\n支持通过串口与设备通信，读取和写入SPD数据，支持写保护“解除” “设置”",
+    about = "本工具支持通过串口与设备通信，进行 DDR SPD 数据的 读取、写入、写保护设置/解除 等操作，同时也支持 WiFi 配置。",
     long_about = None,
-    after_help = "使用示例:\nspdrw.exe list\nspdrw.exe send -h\nspdrw.exe send COM12 ddr4 read 01 02 12"
 )]
 struct Args {
     #[command(subcommand)]
