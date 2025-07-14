@@ -9,7 +9,7 @@ use serialport::available_ports;
 #[command(
     author,
     version,
-    about = "本工具支持通过串口与设备通信，进行 DDR SPD 数据的 读取、写入、写保护设置/解除 等操作，同时也支持 WiFi 配置。",
+    about = "本工具支持通过串口与设备通信，进行 DDR SPD 数据的 读取、写入、写保护设置/解除 等操作，同时也支持 WiFi 配置。\nAPI文档链接 https://www.spdrw.cn",
     long_about = None,
 )]
 struct Args {
